@@ -8,7 +8,7 @@ This is being deployed using Hashicorp Terraform and hosted on Amazon Web Servic
 ## Install Valhelsia 6
 Instructions for installing Valhesia can be found below.
 1. Download Java 17 - [Java 17 Download](https://www.oracle.com/au/java/technologies/downloads/#java17)
-    ![Alt text](images/java17.png)
+    ![Alt text](images/Java17.png)
 2. Download Prism Launcher - [Prism Launcher Download](https://linktodocumentation)
 3. Open the Prism Launcher. At the top right link your Microsoft account associated with your Minecraft Account
      - Once completed; navigate back to the Prism launcher
