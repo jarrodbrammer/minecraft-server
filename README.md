@@ -62,8 +62,9 @@ An email will be sent to you with the *SSO start URL* and *username* details.
 
 1. Open the AWS CLI & Login
 ```powershell
-     aws sso login --profile %{YOUR_PROFILE_NAME}
+     aws sso login --profile ${YOUR_CLI_PROFILE_NAME}
 ```
+     - You'll be prompted to sign into AWS
 2. Switch the server on:
 ```powershell
      TBC
