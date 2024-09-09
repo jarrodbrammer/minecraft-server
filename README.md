@@ -28,22 +28,47 @@ Instructions for installing Valhesia can be found below.
 
 ## Configure Server Access
 
+Before configuring this, ensure you've had a user created by an administrator.
+An email will be sent to you with the *SSO start URL* and *username* details.
+
 1. Download AWS-CLI-V2 - [AWS CLI V2 Download](https://awscli.amazonaws.com/AWSCLIV2.msi)
+     - Run the installer and wait for it to complete.
+2. Open CMD and configure progromatic access via your AWS login
 
 ```powershell
-  npm install my-project
-  cd my-project
+  aws configure sso
 ```
-    
-## Usage/Examples
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
+3. This will prompt for the following details
+```powershell
+     $ aws configure sso
+     SSO session name (Recommended): ServerUser
+     SSO start URL [None]: ENTER_THE_SSO_START_URL_FROM_YOUR_EMAIL
+     SSO region [None]: us-east-1
+     SSO registration scopes [sso:account:access]: sso:account:access
+```    
+4. After completing the above details, you'll be prompted to confirm and login to your AWS account.
+     - Once signed-in, fill out the remaining SSO details below:
+```powershell
+     CLI default client Region [None]: ap-southeast-4
+     CLI default output format [None]: yaml
+     CLI profile name [AdministratorAccess-${ACCOUNT_ID}]: ServerUser
 ```
 
+5. Once complete, you'll be able to run CLI commands to switch the server on & off.
+     - Take note of the profile name you've set, as you'll need it to login & run commands.
 
 
+## Switching the Server On & Off.
+
+1. Open the AWS CLI & Login
+```powershell
+     aws sso login --profile %{YOUR_PROFILE_NAME}
+```
+2. Switch the server on:
+```powershell
+     TBC
+```
+3. Switch the server off:
+```powershell
+     TBC
+```
