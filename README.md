@@ -18,11 +18,13 @@ Instructions for installing Valhesia can be found below.
      - This will open a screen with a list on the left of different file hosts
      - Select CurseForge, search and download *Valhelsia 6*
      ![Alt text](images/Add_Valhelsia_Instance.png)
-5. Once it’s downloaded right click it and edit settings
-     - Increase the max allocated ram to at least 6gb (6144 MB) or 8gb depending on how much ram your pc has
-     - Save/apply that
-6. Then launch valhelsia either from the right launch button or double click it
-     - It’ll then install whatever and eventually boot up MC forge that’ll load all the mods
+5. Once it’s downloaded; navigate to Settings > Java
+     - Increase the max allocated RAM to a minimum requirement of 6GB (6144 MB) or 8GB depending on your devices RAM capacity.
+     ![Alt text](images/Set_Java_Allocations.png)
+     - Once set; close the settings window.
+6. Launch Valhelsia 6 from either the 'Launch' button or by double clicking on it.
+     - This will initiate the install and launch process in order for you to play the game.
+     - Follow this step each time you'd like to launch the modpack.
 
 ## Configure Server Access
 
